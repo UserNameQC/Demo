@@ -1,4 +1,4 @@
-package picker.qjc.com.ScrollRecyclerView.holder;
+package com.qjc.ScrollRecyclerView.holder;
 
 import android.annotation.SuppressLint;
 import android.graphics.Bitmap;

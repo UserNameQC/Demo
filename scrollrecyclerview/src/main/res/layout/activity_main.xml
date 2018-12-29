@@ -5,7 +5,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
-        <picker.qjc.com.ScrollRecyclerView.ui.SwipeLoadMoreLayout
+        <com.qjc.ScrollRecyclerView.ui.SwipeLoadMoreLayout
             android:id="@+id/swipe_refresh_layout"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content">
@@ -14,7 +14,7 @@
                 android:id="@+id/recyclerView"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content" />
-        </picker.qjc.com.ScrollRecyclerView.ui.SwipeLoadMoreLayout>
+        </com.qjc.ScrollRecyclerView.ui.SwipeLoadMoreLayout>
 
         <LinearLayout
             android:id="@+id/progress_layout"

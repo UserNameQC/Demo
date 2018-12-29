@@ -1,4 +1,4 @@
-package picker.qjc.com.ScrollRecyclerView;
+package com.qjc.ScrollRecyclerView;
 
 /**
  * Created by QiaoJunChao on 2018/12/28.

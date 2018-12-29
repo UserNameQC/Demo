@@ -37,5 +37,4 @@ dependencies {
     androidTestImplementation('com.android.support:support-annotations:26.1.0') {
         force = true
     }
-    implementation files('libs/tbs_sdk_thirdapp_v3.6.0.1352_43618_sharewithdownload_withoutGame_obfs_20180918_120327.jar')
 }

@@ -1,4 +1,4 @@
-package picker.qjc.com.ScrollRecyclerView;
+package com.qjc.ScrollRecyclerView;
 
 import android.app.Activity;
 import android.databinding.DataBindingUtil;
@@ -12,10 +12,10 @@ import android.view.View;
 
 import java.util.LinkedList;
 
-import picker.qjc.com.ScrollRecyclerView.adapter.RecycklerTestAdapter;
+import com.qjc.ScrollRecyclerView.adapter.RecycklerTestAdapter;
 import picker.qjc.com.ScrollRecyclerView.databinding.ActivityMainBinding;
-import picker.qjc.com.ScrollRecyclerView.entity.UserEntity;
-import picker.qjc.com.ScrollRecyclerView.ui.SwipeLoadMoreLayout;
+import com.qjc.ScrollRecyclerView.entity.UserEntity;
+import com.qjc.ScrollRecyclerView.ui.SwipeLoadMoreLayout;
 
 public class DemoRecyclerViewActivity extends Activity {
 

@@ -1,13 +1,12 @@
-package picker.qjc.com.ScrollRecyclerView.adapter;
+package com.qjc.ScrollRecyclerView.adapter;
 
 import android.content.Context;
-import android.graphics.Color;
 
 import java.util.LinkedList;
 
 import picker.qjc.com.ScrollRecyclerView.R;
-import picker.qjc.com.ScrollRecyclerView.entity.UserEntity;
-import picker.qjc.com.ScrollRecyclerView.holder.BaseViewHolder;
+import com.qjc.ScrollRecyclerView.entity.UserEntity;
+import com.qjc.ScrollRecyclerView.holder.BaseViewHolder;
 
 /**
  * Created by QiaoJunChao on 2018/12/28.

@@ -1,10 +1,8 @@
-package picker.qjc.com.ScrollRecyclerView.ui;
+package com.qjc.ScrollRecyclerView.ui;
 
 import android.annotation.SuppressLint;
 import android.content.Context;
-import android.os.Build;
 import android.support.v4.widget.SwipeRefreshLayout;
-import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.util.AttributeSet;
 import android.view.LayoutInflater;
