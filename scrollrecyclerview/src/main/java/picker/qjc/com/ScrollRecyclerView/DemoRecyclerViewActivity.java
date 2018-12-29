@@ -2,37 +2,32 @@ package picker.qjc.com.ScrollRecyclerView;
 
 import android.app.Activity;
 import android.databinding.DataBindingUtil;
-import android.os.Build;
 import android.os.Handler;
 import android.os.Looper;
 import android.os.Message;
 import android.support.v4.widget.SwipeRefreshLayout;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.GridLayoutManager;
-import android.support.v7.widget.LinearLayoutManager;
-import android.util.Log;
 import android.view.View;
 
 import java.util.LinkedList;
-import java.util.Random;
 
 import picker.qjc.com.ScrollRecyclerView.adapter.RecycklerTestAdapter;
 import picker.qjc.com.ScrollRecyclerView.databinding.ActivityMainBinding;
 import picker.qjc.com.ScrollRecyclerView.entity.UserEntity;
 import picker.qjc.com.ScrollRecyclerView.ui.SwipeLoadMoreLayout;
 
-public class MainActivity extends Activity {
+public class DemoRecyclerViewActivity extends Activity {
 
     public ActivityMainBinding binding;
     public RecycklerTestAdapter recycklerTestAdapter;
     public LinkedList<UserEntity> dataList = new LinkedList<>();
     public LinkedList<Integer> layoutList = new LinkedList<>();//{R.layout.main_item_layout, R.layout.main_item_one_layout};
-    public String TAG = "MainActivity";
+    public String TAG = "DemoRecyclerViewActivity";
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        binding = DataBindingUtil.setContentView(MainActivity.this, R.layout.activity_main);
+        binding = DataBindingUtil.setContentView(DemoRecyclerViewActivity.this, R.layout.activity_main);
         initData();
         initView();
     }
