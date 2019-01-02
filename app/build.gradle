@@ -1,9 +1,9 @@
-apply plugin: 'com.android.application'
+apply plugin: 'com.android.library'
 
 android {
     compileSdkVersion 26
     defaultConfig {
-        applicationId "utils.qiao.com.demo"
+        //applicationId "utils.qiao.com.demo"
         minSdkVersion 18
         targetSdkVersion 26
         versionCode 1

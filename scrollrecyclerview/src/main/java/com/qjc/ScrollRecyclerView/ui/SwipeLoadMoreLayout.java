@@ -10,7 +10,8 @@ import android.view.MotionEvent;
 import android.view.View;
 import android.view.ViewConfiguration;
 
-import picker.qjc.com.ScrollRecyclerView.R;
+import com.qjc.ScrollRecyclerView.R;
+
 
 /**
  * Created by QiaoJunChao on 2018/12/29.

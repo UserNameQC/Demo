@@ -13,7 +13,7 @@ import android.view.View;
 import java.util.LinkedList;
 
 import com.qjc.ScrollRecyclerView.adapter.RecycklerTestAdapter;
-import picker.qjc.com.ScrollRecyclerView.databinding.ActivityMainBinding;
+import com.qjc.ScrollRecyclerView.databinding.ActivityMainBinding;
 import com.qjc.ScrollRecyclerView.entity.UserEntity;
 import com.qjc.ScrollRecyclerView.ui.SwipeLoadMoreLayout;
 

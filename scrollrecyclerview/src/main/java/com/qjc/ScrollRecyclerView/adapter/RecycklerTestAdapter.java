@@ -4,7 +4,7 @@ import android.content.Context;
 
 import java.util.LinkedList;
 
-import picker.qjc.com.ScrollRecyclerView.R;
+import com.qjc.ScrollRecyclerView.R;
 import com.qjc.ScrollRecyclerView.entity.UserEntity;
 import com.qjc.ScrollRecyclerView.holder.BaseViewHolder;
 
