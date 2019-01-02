@@ -1,4 +1,4 @@
-apply plugin: 'com.android.application'
+apply plugin: 'com.android.library'
 apply plugin: 'com.github.dcendents.android-maven'
 
 group='com.github.UserNameQC'
@@ -6,7 +6,6 @@ group='com.github.UserNameQC'
 android {
     compileSdkVersion 26
     defaultConfig {
-        applicationId "com.qjc.scrollrecyclerview"
         minSdkVersion 18
         targetSdkVersion 26
         versionCode 1
