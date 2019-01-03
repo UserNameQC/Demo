@@ -8,6 +8,7 @@ import android.os.Message;
 import android.support.v4.widget.SwipeRefreshLayout;
 import android.os.Bundle;
 import android.support.v7.widget.GridLayoutManager;
+import android.support.v7.widget.LinearLayoutManager;
 import android.view.View;
 
 import java.util.LinkedList;
@@ -47,9 +48,11 @@ public class DemoRecyclerViewActivity extends Activity {
     }
 
     public void initView(){
-        binding.recyclerView.setLayoutManager(new GridLayoutManager(this, 3));
+        binding.recyclerView.setLayoutManager(new LinearLayoutManager(this));
         recycklerTestAdapter = new RecycklerTestAdapter(this, dataList, layoutList);
+        recycklerTestAdapter.setItemType(1);
         recycklerTestAdapter.setItemViewType(recycklerTestAdapter.itemViewTypes);
+        recycklerTestAdapter.setFooterView(R.layout.foot_progress_layout);
         binding.recyclerView.setAdapter(recycklerTestAdapter);
 
         binding.swipeRefreshLayout.setOnRefreshListener(new SwipeRefreshLayout.OnRefreshListener() {
@@ -71,6 +74,7 @@ public class DemoRecyclerViewActivity extends Activity {
                     binding.swipeRefreshLayout.DownY = 0;
                     binding.swipeRefreshLayout.LastY = 0;
                 }
+                //recycklerTestAdapter.setLoading(flag);
             }
         });
     }

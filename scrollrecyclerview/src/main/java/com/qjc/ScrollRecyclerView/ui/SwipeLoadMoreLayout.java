@@ -11,12 +11,15 @@ import android.view.View;
 import android.view.ViewConfiguration;
 
 import com.qjc.ScrollRecyclerView.R;
+import com.victor.loading.rotate.RotateLoading;
+
+import java.math.RoundingMode;
 
 
 /**
  * Created by QiaoJunChao on 2018/12/29.
  */
-
+@SuppressWarnings("all")
 public class SwipeLoadMoreLayout extends SwipeRefreshLayout {
 
     public RecyclerView recyclerView;
@@ -26,6 +29,7 @@ public class SwipeLoadMoreLayout extends SwipeRefreshLayout {
     public boolean isLoading = false;
     public View footView;
     public LoadMoreListener loadMoreListener;
+    public OnIsLoading onIsLoading;
 
     public SwipeLoadMoreLayout(Context context) {
         super(context, null);
@@ -36,7 +40,6 @@ public class SwipeLoadMoreLayout extends SwipeRefreshLayout {
         TouchSlop = ViewConfiguration.get(context).getScaledTouchSlop();
         footView = LayoutInflater.from(context).inflate(R.layout.foot_progress_layout, null);
     }
-
 
     @Override
     protected void onLayout(boolean changed, int left, int top, int right, int bottom) {
@@ -79,37 +82,51 @@ public class SwipeLoadMoreLayout extends SwipeRefreshLayout {
         return false;
     }
 
+    /**
+     * 开始加载更多
+     */
     public interface LoadMoreListener{
         void LoadMore();
-    };
+    }
 
+    /**
+     * 设置加载更过数据
+     * @param loadMoreListener 加载数据接口
+     */
     public void setLoadMoreListener(LoadMoreListener loadMoreListener){
         this.loadMoreListener = loadMoreListener;
     }
 
     public void setLoading(boolean flag){
-        /*isLoading = flag;
-        if (flag){
+        isLoading = flag;
+        /*if (flag){
             recyclerView.addView(footView, recyclerView.getChildCount());
+            ((RotateLoading)footView.findViewById(R.id.rotate_loading_footer)).start();
         } else {
+            ((RotateLoading)footView.findViewById(R.id.rotate_loading_footer)).stop();
             recyclerView.removeView(footView);
             DownY = 0;
             LastY = 0;
         }*/
-        isLoading = flag;
         if (onIsLoading != null){
             onIsLoading.setLoading(flag);
         }
     }
 
+    /**
+     * 加载数据时的ui变化
+     */
     public interface OnIsLoading{
         void setLoading(boolean flag);
     }
-    public OnIsLoading onIsLoading;
+
     public void setIsLoading(OnIsLoading onIsLoading){
         this.onIsLoading = onIsLoading;
     }
 
+    /**
+     * 加载数据
+     */
     public void Loading(){
         setLoading(true);
         if (loadMoreListener != null){

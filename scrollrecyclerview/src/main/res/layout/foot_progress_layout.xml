@@ -4,14 +4,18 @@
     android:layout_height="wrap_content"
     android:gravity="center">
 
-    <android.support.v4.widget.ContentLoadingProgressBar
+    <com.victor.loading.rotate.RotateLoading
+        android:id="@+id/rotate_loading_footer"
         android:layout_width="26dp"
-        android:layout_height="26dp" />
+        android:layout_height="26dp"
+        android:visibility="gone"/>
 
     <TextView
+        android:id="@+id/rotate_message"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="正在加载数据...."
-        android:layout_marginStart="10dp"/>
+        android:layout_marginStart="10dp"
+        android:visibility="gone"/>
 
 </LinearLayout>
