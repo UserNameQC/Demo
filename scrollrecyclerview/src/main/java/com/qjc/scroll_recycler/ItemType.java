@@ -1,4 +1,4 @@
-package com.qjc.ScrollRecyclerView;
+package com.qjc.scroll_recycler;
 
 /**
  * Created by QiaoJunChao on 2018/12/28.

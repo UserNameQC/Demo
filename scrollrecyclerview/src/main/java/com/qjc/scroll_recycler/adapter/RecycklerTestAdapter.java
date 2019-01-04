@@ -1,13 +1,12 @@
-package com.qjc.ScrollRecyclerView.adapter;
+package com.qjc.scroll_recycler.adapter;
 
 import android.content.Context;
-import android.view.View;
 
 import java.util.LinkedList;
 
-import com.qjc.ScrollRecyclerView.R;
-import com.qjc.ScrollRecyclerView.entity.UserEntity;
-import com.qjc.ScrollRecyclerView.holder.BaseViewHolder;
+import com.qjc.scroll_recycler.R;
+import com.qjc.scroll_recycler.entity.UserEntity;
+import com.qjc.scroll_recycler.holder.BaseViewHolder;
 
 /**
  * Created by QiaoJunChao on 2018/12/28.

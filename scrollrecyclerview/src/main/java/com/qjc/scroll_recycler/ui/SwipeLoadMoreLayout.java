@@ -1,4 +1,4 @@
-package com.qjc.ScrollRecyclerView.ui;
+package com.qjc.scroll_recycler.ui;
 
 import android.annotation.SuppressLint;
 import android.content.Context;
@@ -10,11 +10,7 @@ import android.view.MotionEvent;
 import android.view.View;
 import android.view.ViewConfiguration;
 
-import com.qjc.ScrollRecyclerView.R;
-import com.victor.loading.rotate.RotateLoading;
-
-import java.math.RoundingMode;
-
+import com.qjc.scroll_recycler.R;
 
 /**
  * Created by QiaoJunChao on 2018/12/29.

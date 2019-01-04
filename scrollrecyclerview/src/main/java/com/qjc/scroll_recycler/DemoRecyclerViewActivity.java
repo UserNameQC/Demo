@@ -1,4 +1,4 @@
-package com.qjc.ScrollRecyclerView;
+package com.qjc.scroll_recycler;
 
 import android.app.Activity;
 import android.databinding.DataBindingUtil;
@@ -7,16 +7,15 @@ import android.os.Looper;
 import android.os.Message;
 import android.support.v4.widget.SwipeRefreshLayout;
 import android.os.Bundle;
-import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.LinearLayoutManager;
 import android.view.View;
 
 import java.util.LinkedList;
 
-import com.qjc.ScrollRecyclerView.adapter.RecycklerTestAdapter;
-import com.qjc.ScrollRecyclerView.databinding.ActivityMainBinding;
-import com.qjc.ScrollRecyclerView.entity.UserEntity;
-import com.qjc.ScrollRecyclerView.ui.SwipeLoadMoreLayout;
+import com.qjc.scroll_recycler.adapter.RecycklerTestAdapter;
+import com.qjc.scroll_recycler.databinding.ActivityMainBinding;
+import com.qjc.scroll_recycler.entity.UserEntity;
+import com.qjc.scroll_recycler.ui.SwipeLoadMoreLayout;
 
 public class DemoRecyclerViewActivity extends Activity {
 

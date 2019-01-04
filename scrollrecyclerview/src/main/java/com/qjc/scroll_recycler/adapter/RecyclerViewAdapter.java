@@ -1,4 +1,4 @@
-package com.qjc.ScrollRecyclerView.adapter;
+package com.qjc.scroll_recycler.adapter;
 
 import android.content.Context;
 import android.support.v7.widget.RecyclerView;
@@ -8,9 +8,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import java.util.LinkedList;
 
-import com.qjc.ScrollRecyclerView.R;
-import com.qjc.ScrollRecyclerView.holder.BaseViewHolder;
-import com.victor.loading.rotate.RotateLoading;
+import com.qjc.scroll_recycler.holder.BaseViewHolder;
 
 /**
  * Created by QiaoJunChao on 2018/12/28.

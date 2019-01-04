@@ -1,4 +1,4 @@
-package com.qjc.ScrollRecyclerView.entity;
+package com.qjc.scroll_recycler.entity;
 
 /**
  * Created by QiaoJunChao on 2018/12/28.
