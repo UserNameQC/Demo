@@ -1,4 +1,4 @@
-package utils.qiao.com.demo;
+package com.qjc.demo;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
